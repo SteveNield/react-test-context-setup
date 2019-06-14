@@ -1,6 +1,8 @@
 # react-test-context-setup
 ### Low-impact test pattern for setup of react context and provider
 
+![npm](https://img.shields.io/npm/v/react-test-context-setup.svg)
+
 ## Problem
 React Context API provides a low-friction method for managing state change without depending on large-overhead libraries such as redux.  Testing components which use context is a well-understood problem but isolating the context and provider setup code for testing can be tricky.
 
