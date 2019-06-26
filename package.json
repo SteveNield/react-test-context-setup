@@ -1,6 +1,6 @@
 {
   "name": "react-test-context-setup",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Low-impact test pattern for setup of react context and provider",
   "main": "index.js",
   "scripts": {

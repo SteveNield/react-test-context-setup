@@ -1,19 +1,20 @@
-import React, { useContext } from 'react';
+const React = require('react');
+const useContext = React.useContext;
 
-export default ({ Context }) => {
-    const { state } = useContext(Context);
+module.exports = ({ Context }) => {
+  const { state } = useContext(Context);
 
-    return (
-        <div>
-            {
-                Object.keys(state).map(s => {
-                    return (
-                        <div
-                            key={`test-element_${s}`}
-                            data-testid={s}>{state[s]}</div>
-                    );
-                })
-            }
-        </div>
-    );
+  return (
+    <div>
+      {
+        Object.keys(state).map(s => {
+          return (
+            <div
+              key={`test-element_${s}`}
+              data-testid={s}>{state[s]}</div>
+          );
+        })
+      }
+    </div>
+  );
 }

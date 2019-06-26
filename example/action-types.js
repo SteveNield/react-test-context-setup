@@ -1,2 +1,7 @@
-export const INCREMENT = "count.INCREMENT";
-export const DECREMENT = "count.DECREMENT";
+const INCREMENT = "count.INCREMENT";
+const DECREMENT = "count.DECREMENT";
+
+module.exports = {
+  INCREMENT,
+  DECREMENT
+}
