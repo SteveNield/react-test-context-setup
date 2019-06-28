@@ -7,7 +7,7 @@ import {
     CounterContext, 
     CounterProvider 
 } from './context';
-import ContextTestComponent from './../index';
+import ContextTestComponent from './../src/index';
 
 afterEach(cleanup);
 

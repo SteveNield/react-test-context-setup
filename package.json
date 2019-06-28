@@ -1,14 +1,19 @@
 {
   "name": "react-test-context-setup",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Low-impact test pattern for setup of react context and provider",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "webpack --watch",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SteveNield/react-test-context-setup.git"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
   },
   "keywords": [
     "react",
@@ -25,15 +30,20 @@
     "url": "https://github.com/SteveNield/react-test-context-setup/issues"
   },
   "homepage": "https://github.com/SteveNield/react-test-context-setup#readme",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.35.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "@testing-library/react": "^8.0.1",
     "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
     "babel-polyfill": "^6.26.0",
     "jest": "^24.8.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "webpack-cli": "^3.3.5"
   }
 }
